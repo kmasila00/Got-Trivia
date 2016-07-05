@@ -1,0 +1,35 @@
+var questions = [
+		{name:"medium1", question:"Who were Daenerys' Parents?", difficulty:"medium", choices:["Aemon & Ellia", "Aerys II & Rhaella", "Aegon & Rhaenys", "Duncan & Daenerys"], answer:"Aerys II & Rhaella", },
+		{name:"hard1", question:"Which Dragon Was Called 'The Black Dread'?", difficulty:"hard", choices:["Meraxes", "Drogon", "Vhagar", "Balerion"], answer:"Balerion", },
+		{name:"hard2", question:"Where Does Petyr Come From?", difficulty:"hard", choices:["The Fingers", "Riverrun", "Braavos", "The Eyrie"], answer:"The Fingers", },
+		{name:"easy1", question:"Who Was Cersei Supposed To Marry?", difficulty:"easy", choices:["Robert Baratheon", "Eddard Stark", "Stannis Baratheon", "Rhaegar Targaryen"], answer:"Rhaegar Targaryen", },
+		{name:"hard3", question:"Who Is Tysha?", difficulty:"hard", choices:["Tywin's Wife", "Tyrion's Ex-Wife", "Jaime's Ex-Wife", "Cersei's Best Friend"], answer:"Tyrion's Ex-Wife", },
+		{name:"medium2", question:"Who Was Jaime Supposed To Marry?", difficulty:"medium", choices:["Lysa Arryn", "Catelyn Stark", "Daenerys Targaryen", "Cersei Lannister"], answer:"Lysa Arryn", },
+		{name:"easy2", question:"Why Did Jaime Kill King Aerys II?", difficulty:"easy", choices:["Aerys II held Jaime hostage because he didn't trust Tywin", "He wanted to become famous", "His father asked him to kill Aerys II because they hated each other", "Aerys II planned to burn the entire city to the ground rather than lose it to Robert"], answer:"Aerys II planned to burn the entire city to the ground rather than lose it to Robert", },
+		{name:"medium3", question:"What Does 'Valar Dohaeris' mean?", difficulty:"medium", choices:["'All men must die'", "'Everyone must die'", "'All men must serve'", "'I have three dragons'"], answer:"'All men must serve'", },
+		{name:"easy3", question:"Who Is Elia Martell?", difficulty:"easy", choices:["Oberyn's lover", "Oberyn's wife", "Oberyn's daughter", "Oberyn's sister"], answer:"Oberyn's sister", },
+		{name:"hard4", question:"Where Does Melisandre Come From?", difficulty:"hard", choices:["Tyrosh", "Asshai", "Volantis", "Braavos"], answer:"Asshai", },
+		{name:"medium4", question:"Where Does Missandei Come From?", difficulty:"medium", choices:["The Summer Isles", "Naath", "Tyrosh", "Pentos"], answer:"Naath", },
+		{name:"medium5", question:"Why Did Arya Kill Ser Meryn Trant?", difficulty:"medium", choices:["He beheaded her father", "He was a pedophile", "He abused Sansa", "He killed Syrio Forel"], answer:"He killed Syrio Forel", },
+		{name:"easy4", question:"When expecting her child, Daenerys Targaryen must do what as part of a special Dothraki ceremony?", difficulty:"easy", choices:["Drink the blood of her husband", "Spend 7 days alone in the plains of Essos", "Eat a raw heart of a stallion", "Eat a dragon egg"], answer:"Eat a raw heart of a stallion", },
+		{name:"hard5", question:"Which of the following did Tyrion Lannister NOT say in Game of Thrones?", difficulty:"hard", choices:["I may be an Imp, but I'm no jackass", "Oh did I kill him too? I've been a very busy man", "It's not slander if it's true", "It's not easy being drunk all the time. If it were easy, everyone would do it"], answer:"I may be an Imp, but I'm no jackass", },
+		{name:"easy5", question:"Who is the eldest child of Lady Catelyn and Lord Eddard Stark?", difficulty:"easy", choices:["Bran Stark", "Rob Stark", "Jon Snow", "Sansa Stark"], answer:"Rob Stark", },
+		{name:"medium6", question:"A body of water known as the Narrow Sea separates the land of Westeros from what other continent?", difficulty:"medium", choices:["Easteros", "Essos", "Martinia", "Sothoryos"], answer:"Essos", },
+		{name:"medium7", question:"Which of the following is NOT one of the Seven Kingdoms of Westeros?", difficulty:"medium", choices:["The Kingdom of the North", "The Kingdom of the Mountain and the Vale", "The Kingdom of the Ironborn", "Principality of Dorne"], answer:"The Kingdom of the Ironborn", },
+		{name:"easy6", question:"Who are the law enforcers who act as policemen of King’s Landing?", difficulty:"easy", choices:["The City Watch", "Brotherhood Without Banners", "Order of Maesters", "Faceless Men"], answer:"The City Watch", },
+		{name:"hard6", question:"In the first episode of Game of Thrones, which of the following characters do not die?", difficulty:"hard", choices:["Ser Waymar Royce", "Gared", "Qotho", "Lord Jon Arryn"], answer:"Qotho", },
+		{name:"hard7", question:"What is the name of Valyrian steel greatsword that is used to slice off the head of Lord Eddard Stark", difficulty:"hard", choices:["Ice", "Glamdring", "Stinger", "The Firebrand"], answer:"Ice", },
+		{name:"easy7", question:"In the episode known as the 'Red Wedding', what does Roose Bolton whisper in Rob Stark ear after stabbing him?", difficulty:"easy", choices:["If you think this has a happy ending, you haven’t been paying attention", "Chaos isn't a pit. Chaos is a ladder", "Do, or do not. There is no try", "The Lannisters send their regards"], answer:"The Lannisters send their regards", },
+		{name:"easy8", question:"Jon Snow and Tormund Giantsbane journey to the town Hardhome to convince the Wildlings of what?", difficulty:"easy", choices:["To stop overfishing the Shivering Sea", "To join them in the war against the Whitewalkers", "To stop an attack from the Sons of the Harpy", "To help find a craftsman to sharpen their "], answer:"To join them in the war against the Whitewalkers", },
+		{name:"easy9", question:"How did Daenerys eventually hatch her dragon eggs?", difficulty:"easy", choices:["In a fireplace", "In a lightning storm", "In a funeral pyre", "In a frozen cave"], answer:"In a funeral pyre", },
+		{name:"hard8", question:"How many times has Beric Dondarrion been brought back to life?", difficulty:"hard", choices:["Three", "Five", "Six", "Seven"], answer:"Six", },
+		{name:"easy10", question:"Besides dragonglass, what is the only other substance capable of defeating White Walkers?", difficulty:"easy", choices:["Weirwood", "Wildfire", "Valyrian Steel", "Snowballs"], answer:"Valyrian Steel", },
+		{name:"medium8", question:"What is the only thing that can put out volatile Wildfire?", difficulty:"medium", choices:["Sand", "Water", "Sunlight", "Dragon's blood"], answer:"Sand", },
+		{name:"medium9", question:"Which Stark dire wolf was the first to die?", difficulty:"medium", choices:["Summer", "Ghost", "Lady", "Nymeria"], answer:"Lady", },
+		{name:"hard9", question:"'It's nothing' were the last words of which infamous character?", difficulty:"hard", choices:["Renly Baratheon", "Tywin Lannister", "King Joffrey", "Rob Stark"], answer:"King Joffrey", },
+		{name:"hard10", question:"What is the name of King Tommen's favorite cat?", difficulty:"hard", choices:["Battle Puss", "Little Lion", "Ser Pounce", "Prince Fuzzy"], answer:"Ser Pounce", },
+		{name:"medium10", question:"What is the name of Eddard Stark's sword?", difficulty:"medium", choices:["Ice", "Oathkeeper", "Heartsbane", "Two Brothers"], answer:"Ice", }
+	];
+
+
+module.exports = { questions: questions }

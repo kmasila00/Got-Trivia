@@ -1,0 +1,19 @@
+<div class="column row">
+	<div class="col-lg-3"></div>
+	<div class="col-lg-6">
+		<div>
+			<form ng-repeat="Q in theQuestions">
+				<label>{{ Q.question }}</label>
+					<br>
+				  	<input type="radio" ng-model="theAnswer.question[Q.name]" name="gender" value="{{ Q.choices[0] }}"/><label>{{ Q.choices[0] }}</label><br>
+				  	<input type="radio" ng-model="theAnswer.question[Q.name]" name="gender" value="{{ Q.choices[1] }}"/><label>{{ Q.choices[1] }}</label><br>
+				  	<input type="radio" ng-model="theAnswer.question[Q.name]" name="gender" value="{{ Q.choices[2] }}"/><label>{{ Q.choices[2] }}</label><br>
+				  	<input type="radio" ng-model="theAnswer.question[Q.name]" name="gender" value="{{ Q.choices[3] }}"/><label>{{ Q.choices[3] }}</label><br>
+				  	<hr>
+			</form>
+		</div>
+		<button ui-sref="add-score" ng-click="print()" class="btn btn-default btn-block">Submit</button>
+	</div>
+	<div class="col-lg-3"></div>
+</div>
+
