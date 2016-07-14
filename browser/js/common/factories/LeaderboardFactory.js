@@ -3,6 +3,9 @@ app.factory('LeaderboardFactory', function($http){
 	return {
 
 		addScore: function(name, difficulty, score, sigil){
+			console.log(name);
+			console.log(difficulty);
+			console.log(score);
 			return $http.post('/api/leaderboard/', {name:name, difficulty:difficulty, score:score, sigil:sigil})
 			.then()
 		},

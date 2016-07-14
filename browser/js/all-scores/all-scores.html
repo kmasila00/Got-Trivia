@@ -1,66 +1,62 @@
-<div class="column row">
-	<div class="col-lg-4"></div>
-	<div class="col-lg-4">
-		<h1>LEADERBOARDS</h1>
-	</div>
-	<div class="col-lg-4"></div>
-</div>
+<center>
+	<h1>LEADERBOARDS</h1>
 
-<br>
+	<br>
 
-<div class="column row">
-	<div class="col-lg-3" style="padding-left: 100px;"><h3>EASY</h3></div>
-	<div class="col-lg-6">
-		<table style="width:100%">
-			<tr>
-				<td><p>HOUSE</p></td>
-				<td><p>NAME</p></td>
-				<td><p>SCORE</p></td>
-			</tr>
-			<tr ng-repeat="eScore in easyScores | orderBy:'-score'">
-				<td><img width="150px" height="100px" ng-src="{{ eScore.sigil }}"></td>
-				<td>{{ eScore.name }}</td>
-				<td>{{ eScore.score }}</td>
-			</tr>
-		</table>
+	<div class="column row">
+		<div class="col-lg-3" style="padding-left: 100px;"><h3>EASY</h3></div>
+		<div class="col-lg-6">
+			<table style="width:100%">
+				<tr>
+					<td><p>HOUSE</p></td>
+					<td><p>NAME</p></td>
+					<td><p>SCORE</p></td>
+				</tr>
+				<tr ng-repeat="eScore in easyScores | orderBy:'-score'">
+					<td><img width="150px" height="100px" ng-src="{{ eScore.sigil }}"></td>
+					<td>{{ eScore.name }}</td>
+					<td>{{ eScore.score }}</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-lg-3"></div>
 	</div>
-	<div class="col-lg-3"></div>
-</div>
-<hr>
-<div class="column row">
-	<div class="col-lg-3" style="padding-left: 100px;"><h3>MEDIUM</h3></div>
-	<div class="col-lg-6">
-		<table style="width:100%">
-			<tr>
-				<td><p>HOUSE</p></td>
-				<td><p>NAME</p></td>
-				<td><p>SCORE</p></td>
-			</tr>
-			<tr ng-repeat="mScore in mediumScores | orderBy:'-score'">
-				<td><img width="150px" height="100px" ng-src="{{ mScore.sigil }}"></td>
-				<td>{{ mScore.name }}</td>
-				<td>{{ mScore.score }}</td>
-			</tr>
-		</table>
+	<hr>
+	<div class="column row">
+		<div class="col-lg-3" style="padding-left: 100px;"><h3>MEDIUM</h3></div>
+		<div class="col-lg-6">
+			<table style="width:100%">
+				<tr>
+					<td><p>HOUSE</p></td>
+					<td><p>NAME</p></td>
+					<td><p>SCORE</p></td>
+				</tr>
+				<tr ng-repeat="mScore in mediumScores | orderBy:'-score'">
+					<td><img width="150px" height="100px" ng-src="{{ mScore.sigil }}"></td>
+					<td>{{ mScore.name }}</td>
+					<td>{{ mScore.score }}</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-lg-3"></div>
 	</div>
-	<div class="col-lg-3"></div>
-</div>
-<hr>
-<div class="column row">
-	<div class="col-lg-3" style="padding-left: 100px;"><h3>HARD</h3></div>
-	<div class="col-lg-6">
-		<table style="width:100%">
-			<tr>
-				<td><p>HOUSE</p></td>
-				<td><p>NAME</p></td>
-				<td><p>SCORE</p></td>
-			</tr>
-			<tr ng-repeat="hScore in easyScores | orderBy:'-score'">
-				<td><img width="150px" height="100px" ng-src="{{ hScore.sigil }}"></td>
-				<td>{{ hScore.name }}</td>
-				<td>{{ hScore.score }}</td>
-			</tr>
-		</table>
+	<hr>
+	<div class="column row">
+		<div class="col-lg-3" style="padding-left: 100px;"><h3>HARD</h3></div>
+		<div class="col-lg-6">
+			<table style="width:100%">
+				<tr>
+					<td><p>HOUSE</p></td>
+					<td><p>NAME</p></td>
+					<td><p>SCORE</p></td>
+				</tr>
+				<tr ng-repeat="hScore in hardScores | orderBy:'-score'">
+					<td><img width="150px" height="100px" ng-src="{{ hScore.sigil }}"></td>
+					<td>{{ hScore.name }}</td>
+					<td>{{ hScore.score }}</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-lg-3"></div>
 	</div>
-	<div class="col-lg-3"></div>
-</div>
+</center>
